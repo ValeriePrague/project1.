@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="cs-cz">
+       <head>
+       <meta charset="utf-8"> 
+       <title>První webová aplikace v JavaScriptu</title>
+       </head>
+
+<body>
+<script type="text/javascript">
+document.write("Ahoj ITnetwork!");
+document.write("<br />");
+let a = 10;
+let b = 20;
+let c = a + b;
+document.write("Zde je součet čísel a a b: ");
+document.write(c);
+document.write("<br />");
+let s1 = "10";
+let s2 = "20";
+let s3 = s1 + s2;
+document.write("Zde je součet řetězců s1 a s2: ");
+document.write(s3);
+document.write("<br />");
+
+let d = new Date();
+if ((d.getHours() >= 5) && (d.getHours() <= 9))
+document.write("Dobre rano");
+else if ((d.getHours() >= 10) && (d.getHours() <= 11))
+document.write("Dobre dopoledne");
+else if ((d.getHours() == 12))
+document.write("Dobre poledne");
+else if ((d.getHours() >=13) && (d.getHours() <=17))
+document.write("Dobre odpoledne");
+else if ((d.getHours() >=18) && (d.getHours()  <=21))
+document.write("Dobry vecer");
+else
+documentw.write("Dobrou noc");
+document.write("<br />");
+let vek = prompt("Zadej svuj vek");
+if (vek >= 18)
+document.write("Jsi plnolety");
+else
+document.write("Nejsi plnolety");
+</script>
+
+</body>
+</html>
